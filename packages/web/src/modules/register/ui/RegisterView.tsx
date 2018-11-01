@@ -1,7 +1,6 @@
 import * as React from 'react'
 import {Form, Icon, Input, Button} from "antd";
 import {withFormik, FormikErrors, FormikProps }  from 'formik';
-import * as yup from 'yup';
 
 const FormItem = Form.Item;
 
@@ -76,9 +75,6 @@ class C extends React.PureComponent<FormikProps<FormValues> & Props> {
   }
 }
 
-const emailNotLongEnough = "email must be at least 3 characters";
-const passwordNotLongEnough = "password must be at least 3 characters";
-const invalidEmail = "email must be a valid email";
 import {validUserSchema} from '@abbdt/common';
 
 
